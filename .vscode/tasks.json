@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build buckai",
+      "type": "shell",
+      "command": "cl",
+      "args": [
+        "/Fo:obj\\",
+        "/Fd:dbg\\",
+        "/Fe:bin\\buckai.exe",
+        "/Zi",
+        "src\\*.c"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$msCompile"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
