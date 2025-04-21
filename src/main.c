@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 
         while (live_count > 0 || blank_count > 0)
         {
-            if (player_health == 0 || opponent_health == 0)
+            if (player_health <= 0 || opponent_health <= 0)
                 break;
 
             printf("\nPlayer Health: %d || Opponent Health: %d\n", player_health, opponent_health);
@@ -274,7 +274,7 @@ int main(int argc, char **argv)
 
     printf("\n\n");
 
-    if (opponent_health == 0)
+    if (opponent_health <= 0)
     {
         printf("Player victory.\n");
     }
